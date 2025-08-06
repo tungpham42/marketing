@@ -56,7 +56,8 @@ export default function Home() {
         </h1>
         <p className="text-lg text-center text-gray-600 mb-10 max-w-2xl mx-auto">
           Dive into the world of digital marketing with our expertly curated
-          guides on SEO, content, email, social media, and advertising.
+          guides on SEO, content, email, social media, advertising, and
+          analytics.
         </p>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((cat) => (
