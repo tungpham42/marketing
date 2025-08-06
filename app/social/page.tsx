@@ -4,7 +4,7 @@ import { getHostUrl } from "@/utils/getHostUrl";
 export async function generateMetadata(): Promise<Metadata> {
   const hostUrl = await getHostUrl();
   return {
-    title: "Digital Marketing Analytics | Digital Marketing Guide",
+    title: "Social Media Marketing | Digital Marketing Guide",
     description:
       "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
     keywords: [
@@ -17,17 +17,17 @@ export async function generateMetadata(): Promise<Metadata> {
       "social",
     ],
     openGraph: {
-      title: "Digital Marketing Analytics | Digital Marketing Guide",
+      title: "Social Media Marketing | Digital Marketing Guide",
       description:
         "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
       type: "website",
-      url: `${hostUrl}/marketing/analytics`,
+      url: `${hostUrl}/social`,
       images: [
         {
-          url: `${hostUrl}/1200x630_analytics.jpg`,
+          url: `${hostUrl}/1200x630_social.jpg`,
           width: 1200,
           height: 630,
-          alt: "Digital Marketing Analytics | Digital Marketing Guide",
+          alt: "Social Media Marketing | Digital Marketing Guide",
         },
       ],
       siteName: "Digital Marketing Guide",
@@ -35,79 +35,86 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function AnalyticsPage() {
+export default function SocialMediaPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6 tracking-tight">
-          Digital Marketing Analytics
+          Social Media Marketing
         </h1>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Digital marketing analytics involves measuring, analyzing, and
-          optimizing marketing performance to make data-driven decisions that
-          enhance campaign effectiveness and business growth.
+          Social media marketing is the practice of using social media platforms
+          to promote products, services, or brands and engage with audiences.
+          Platforms like Facebook, Instagram, X, LinkedIn, and TikTok allow
+          businesses to connect with users in creative and impactful ways.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Key Metrics
+            Set Clear Goals
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Track metrics like click-through rate (CTR), conversion rate, return
-            on investment (ROI), and engagement to gauge campaign success.
+            A successful social media strategy begins with clearly defined
+            goals, such as increasing brand awareness, generating leads, or
+            fostering customer loyalty. Pair each goal with measurable KPIs like
+            engagement rate or conversions.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Analytics Tools
+            Choose the Right Platforms
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Use tools like Google Analytics, SEMrush, and HubSpot to monitor
-            traffic, user behavior, and campaign performance in real-time.
+            Each platform has unique demographics and content formats. LinkedIn
+            is ideal for B2B, while Instagram and TikTok excel in visual
+            storytelling for consumer engagement.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Data Collection
+            Create Engaging Content
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Collect data from multiple sources, including websites, social
-            media, and email campaigns, to gain a holistic view of performance.
+            Content is king. Use diverse formats like videos, stories, and
+            polls, and maintain consistency with a content calendar to keep your
+            audience engaged.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            A/B Testing
+            Community Management
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Run A/B tests on ads, emails, or landing pages to identify what
-            drives the best results and optimize accordingly.
+            Respond to comments and messages, and use social listening tools
+            like Hootsuite to track conversations and manage your brand’s
+            reputation.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Reporting
+            Leverage Paid Ads
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Create clear, actionable reports with tools like Looker Studio to
-            share insights and align strategies with business goals.
+            Amplify your reach with targeted ads like boosted posts or carousel
+            ads, using platform tools to focus on specific audiences.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Optimization
+            Analytics & Optimization
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Use insights from analytics to refine campaigns, improve targeting,
-            and maximize ROI over time.
+            Track metrics like engagement and conversion rates with platform
+            analytics or tools like Buffer to refine your strategy.
           </p>
         </div>
       </div>
       <div className="bg-blue-50 rounded-xl p-8 mt-8 text-center">
         <p className="text-lg text-gray-700 leading-relaxed">
-          Analytics empowers marketers to make informed decisions, optimize
-          strategies, and drive measurable growth through data.
+          In summary, social media marketing is about strategy, creativity, and
+          connection. Build trust and visibility with a dynamic approach to
+          content and engagement.
         </p>
       </div>
     </div>

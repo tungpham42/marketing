@@ -65,7 +65,7 @@ export default function Home() {
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
             >
               <Link
-                href={`/marketing/${cat.slug}`}
+                href={`/${cat.slug}`}
                 className="text-xl font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-200"
               >
                 {cat.title}

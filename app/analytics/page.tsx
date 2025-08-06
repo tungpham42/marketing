@@ -4,7 +4,7 @@ import { getHostUrl } from "@/utils/getHostUrl";
 export async function generateMetadata(): Promise<Metadata> {
   const hostUrl = await getHostUrl();
   return {
-    title: "Content Marketing | Digital Marketing Guide",
+    title: "Digital Marketing Analytics | Digital Marketing Guide",
     description:
       "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
     keywords: [
@@ -17,17 +17,17 @@ export async function generateMetadata(): Promise<Metadata> {
       "social",
     ],
     openGraph: {
-      title: "Content Marketing | Digital Marketing Guide",
+      title: "Digital Marketing Analytics | Digital Marketing Guide",
       description:
         "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
       type: "website",
-      url: `${hostUrl}/marketing/content`,
+      url: `${hostUrl}/analytics`,
       images: [
         {
-          url: `${hostUrl}/1200x630_content.jpg`,
+          url: `${hostUrl}/1200x630_analytics.jpg`,
           width: 1200,
           height: 630,
-          alt: "Content Marketing | Digital Marketing Guide",
+          alt: "Digital Marketing Analytics | Digital Marketing Guide",
         },
       ],
       siteName: "Digital Marketing Guide",
@@ -35,79 +35,79 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function ContentMarketingPage() {
+export default function AnalyticsPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6 tracking-tight">
-          Content Marketing
+          Digital Marketing Analytics
         </h1>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Content marketing focuses on creating valuable, relevant content to
-          attract and retain an audience, building trust and driving profitable
-          actions.
+          Digital marketing analytics involves measuring, analyzing, and
+          optimizing marketing performance to make data-driven decisions that
+          enhance campaign effectiveness and business growth.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Know Your Audience
+            Key Metrics
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Create buyer personas to understand your audience’s needs and tailor
-            content to their interests and challenges.
+            Track metrics like click-through rate (CTR), conversion rate, return
+            on investment (ROI), and engagement to gauge campaign success.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Content Formats
+            Analytics Tools
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Use blogs, videos, infographics, or podcasts to deliver value and
-            align with your audience’s preferences.
+            Use tools like Google Analytics, SEMrush, and HubSpot to monitor
+            traffic, user behavior, and campaign performance in real-time.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Content Calendar
+            Data Collection
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Plan and publish content consistently with tools like Trello to
-            align with campaigns and goals.
+            Collect data from multiple sources, including websites, social
+            media, and email campaigns, to gain a holistic view of performance.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Distribution
+            A/B Testing
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Promote content via email, social media, SEO, and paid ads to
-            maximize reach and engagement.
+            Run A/B tests on ads, emails, or landing pages to identify what
+            drives the best results and optimize accordingly.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Measure Success
+            Reporting
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Track KPIs like traffic, engagement, and conversions with tools like
-            Google Analytics to refine your strategy.
+            Create clear, actionable reports with tools like Looker Studio to
+            share insights and align strategies with business goals.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Adapt & Evolve
+            Optimization
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Continuously analyze feedback and trends to keep your content
-            strategy dynamic and effective.
+            Use insights from analytics to refine campaigns, improve targeting,
+            and maximize ROI over time.
           </p>
         </div>
       </div>
       <div className="bg-blue-50 rounded-xl p-8 mt-8 text-center">
         <p className="text-lg text-gray-700 leading-relaxed">
-          Content marketing builds trust and authority through consistent,
-          valuable content that resonates with your audience.
+          Analytics empowers marketers to make informed decisions, optimize
+          strategies, and drive measurable growth through data.
         </p>
       </div>
     </div>

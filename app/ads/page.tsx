@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description:
         "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
       type: "website",
-      url: `${hostUrl}/marketing/ads`,
+      url: `${hostUrl}/ads`,
       images: [
         {
           url: `${hostUrl}/1200x630_ads.jpg`,

@@ -4,7 +4,7 @@ import { getHostUrl } from "@/utils/getHostUrl";
 export async function generateMetadata(): Promise<Metadata> {
   const hostUrl = await getHostUrl();
   return {
-    title: "Email Marketing | Digital Marketing Guide",
+    title: "SEO | Digital Marketing Guide",
     description:
       "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
     keywords: [
@@ -17,17 +17,17 @@ export async function generateMetadata(): Promise<Metadata> {
       "social",
     ],
     openGraph: {
-      title: "Email Marketing | Digital Marketing Guide",
+      title: "SEO | Digital Marketing Guide",
       description:
         "Digital marketing analytics involves measuring, analyzing, and optimizing marketing performance to make data-driven decisions that enhance campaign effectiveness and business growth.",
       type: "website",
-      url: `${hostUrl}/marketing/email`,
+      url: `${hostUrl}/seo`,
       images: [
         {
-          url: `${hostUrl}/1200x630_email.jpg`,
+          url: `${hostUrl}/1200x630_seo.jpg`,
           width: 1200,
           height: 630,
-          alt: "Email Marketing | Digital Marketing Guide",
+          alt: "SEO | Digital Marketing Guide",
         },
       ],
       siteName: "Digital Marketing Guide",
@@ -35,78 +35,80 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function EmailMarketingPage() {
+export default function SEOPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6 tracking-tight">
-          Email Marketing
+          Search Engine Optimization (SEO)
         </h1>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Email marketing is a cost-effective way to nurture leads and drive
-          conversions by sending tailored messages to a targeted audience.
+          SEO enhances your website’s visibility in search engine results,
+          driving more traffic and potential customers to your business through
+          strategic content and technical optimizations.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Build a Quality List
+            Types of SEO
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Use lead magnets like eBooks or discounts to grow a permission-based
-            email list, ensuring compliance with GDPR and CAN-SPAM.
+            On-page SEO focuses on content and meta tags, off-page SEO builds
+            backlinks, and technical SEO optimizes site speed and mobile
+            responsiveness.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Segmentation
+            Keyword Research
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Divide your list by demographics or interests for personalized
-            messaging that boosts open and click-through rates.
+            Identify popular search terms and use them strategically in
+            high-quality content to boost visibility without keyword stuffing.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Compelling Subject Lines
+            Content Creation
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Craft concise, curiosity-driven subject lines with personalization
-            to increase email open rates.
+            Create original, comprehensive content like blogs and multimedia,
+            and update older posts for renewed SEO performance.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Responsive Design
+            Technical SEO
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Create mobile-friendly emails with tools like Mailchimp to ensure
-            great visuals across devices.
+            Ensure fast load times, mobile responsiveness, and proper site
+            architecture using tools like Google Search Console.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Automation
+            Link Building
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Set up automated sequences like welcome emails or abandoned cart
-            reminders to save time and maintain engagement.
+            Earn backlinks from reputable sites through guest posts and
+            shareable content to boost authority.
           </p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
-            Analytics & Testing
+            Analytics
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Use A/B testing and track metrics like open and conversion rates to
-            optimize campaigns.
+            Monitor keyword rankings and traffic with tools like Google
+            Analytics and SEMrush to refine your strategy.
           </p>
         </div>
       </div>
       <div className="bg-blue-50 rounded-xl p-8 mt-8 text-center">
         <p className="text-lg text-gray-700 leading-relaxed">
-          Email marketing builds lasting relationships through personalization,
-          automation, and data-driven optimization.
+          SEO is a long-term strategy. Focus on quality content, technical
+          optimization, and backlinks to achieve lasting visibility and growth.
         </p>
       </div>
     </div>

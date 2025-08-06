@@ -7,12 +7,12 @@ import MainBrandLogo from "./MainBrandLogo";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/marketing/seo", label: "SEO" },
-  { href: "/marketing/content", label: "Content Marketing" },
-  { href: "/marketing/email", label: "Email Marketing" },
-  { href: "/marketing/social", label: "Social Media" },
-  { href: "/marketing/ads", label: "Advertising" },
-  { href: "/marketing/analytics", label: "Analytics" },
+  { href: "/seo", label: "SEO" },
+  { href: "/content", label: "Content Marketing" },
+  { href: "/email", label: "Email Marketing" },
+  { href: "/social", label: "Social Media" },
+  { href: "/ads", label: "Advertising" },
+  { href: "/analytics", label: "Analytics" },
 ];
 
 export default function Sidebar() {
