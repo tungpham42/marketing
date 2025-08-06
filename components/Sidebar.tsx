@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import MainBrandLogo from "./MainBrandLogo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -18,11 +19,11 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full md:w-72 bg-white border-r h-screen sticky top-0 p-6 shadow-sm">
+    <aside className="w-full md:w-72 bg-white border-r h-screen sticky top-0 p-6 shadow-sm flex flex-col">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 tracking-tight">
         Marketing Topics
       </h2>
-      <nav className="space-y-1">
+      <nav className="flex-1 overflow-y-auto space-y-1">
         {links.map((link) => (
           <Link
             key={link.href}
@@ -38,6 +39,12 @@ export default function Sidebar() {
           </Link>
         ))}
       </nav>
+      <MainBrandLogo
+        logoSrc="/soft-logo.webp"
+        mainDomain="soft.io.vn"
+        dismissible={false}
+        altText="Logo Soft"
+      />
     </aside>
   );
 }
